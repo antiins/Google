@@ -19,6 +19,7 @@ Konfigurācija (Apraksta aplikācijas konfigurāciju, iestatot nepieciešamo inf
 $clientID = '<YOUR_CLIENT_ID>';
 $clientSecret = '<YOUR_CLIENT_SECRET>';
 $redirectUri = '<REDIRECT_URI>';
+
 Izveidot klienta pieprasījumu, lai piekļutu Google API:
 $client = new Google_Client();
 $client->setClientId($clientID);
@@ -28,6 +29,7 @@ $client->setRedirectUri($redirectUri);
 Pēc pieslēgšanās datu bazē būs pieejama informācija par konkrēto profilu
 $client->addScope("email");
 $client->addScope("profile");
+
 Koda autentifikācija no Google OAuth:
 if (isset($_GET['code'])) {
   $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
