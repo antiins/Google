@@ -8,3 +8,9 @@
 1. Lietotājs pieslēdzas tīmekļa vietnē un izvēlas sociālo tīklu nodrošinātāju;
 2. Sociālo tīklu pakalpojumu sniedzējam tiek nosūtīts pieteikšanās pieprasījums;
 3. Tiklīdz sociālā tīkla pakalpojuma sniedzējs apstiprinās lietotāja identitāti, pašreizējais lietotājs saņems piekļuvi tīmekļa vietnei. Jauns lietotājs tiks reģistrēts kā jauns lietotājs un pēc tam pieteiksies tīmekļa vietnei.
+# Darbības sociālā pieteikumvārda izveidei
+1. Ir nepieciešams izveidot jaunu projektu iekš Google API Services;
+2. Jāaktivizē OAuth Klienta ID opcija;
+3. Tiks iegūti klienta id un klienta noslēpums (angļ. val. - secret);
+4. Tālāk nepieciešams iestatīt OAuth Consent Screen. Jāpievērš īpaša uzmanība definētajam domēnam;
+5. Veidojot aplikāciju, nepieciešams definēt Google_Client un veidu, kā tiks izgūta informācija par lietotāju.
